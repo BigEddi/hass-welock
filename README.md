@@ -29,9 +29,9 @@ This integration uses the Welock Cloud and Wifibox to communicate with your lock
 |---|---|---|
 | Lock | lock | Unlock (the lock relocks automatically) |
 | Lock / door sensor | Battery | Battery level in % |
-| Lock / WIFIBOX3 | Last unlock | Method (card, fingerprint, passcode, app …); attributes `user`, `user_id`, `time` |
+| Lock / WIFIBOX3 | Last unlock | How, who and when, e.g. `Card · User 7 · 2026-11-20 08:18:33`; attributes `method`, `user`, `user_id`, `time` |
 | Lock / WIFIBOX3 | Last activity | Timestamp of the last unlock |
-| Lock / WIFIBOX3 | Activity (event) | Fires on every unlock (`unlock`) or relay action (`relay_action`) – ideal automation trigger |
+| Lock / WIFIBOX3 | Activity (event) | Fires on every unlock; event type = unlock method (`card`, `fingerprint`, `temporary_passcode` …), attributes `user`, `time` – ideal automation trigger |
 | WIFIBOX3 | Trigger remote control | Button |
 | Door sensor | Door | Open / closed |
 
